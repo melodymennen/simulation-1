@@ -3,3 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home-header {
+  background-color: #ab2a19;
+  color: white;
+}
+
+.home-header > div {
+  height: 70px;
+}
+
+.panel > div {
+  width: 700px;
+  margin: auto;
+}
+
+.shelf-button {
+  background-color: #d34735;
+  color: white;
+  margin: 10px;
+}
