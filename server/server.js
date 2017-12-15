@@ -10,6 +10,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+// Simulation-1 70C
+massive(process.env.CONNECTION_STRING).then(db => {
+    app.set('db',db)
+})
+
 // Simulation-1 74D-1, 74D-2, 74D-3, 74D-4
 app.get('/api/shelf/:id', controller.readShelves)
 app.get('/api/bin/:id', controller.readBin)
