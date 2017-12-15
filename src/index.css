@@ -4,20 +4,24 @@ body {
   font-family: sans-serif;
 }
 
+/* Simulation-1 24F */
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Simulation-1 22C-2, 23E */
 .home-header {
   background-color: #ab2a19;
   color: white;
 }
 
+/* Simulation-1 22C-3 */
 .home-header > div {
   height: 70px;
 }
 
+/* Simulation-1 24C */
 .panel > div {
   width: 700px;
   margin: auto;
