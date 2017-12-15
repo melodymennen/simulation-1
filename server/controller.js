@@ -3,12 +3,12 @@ module.exports = {
         const db = req.app.get('db');
         const {name , price} = req.body;
 
-        db.createBin([name, price]).then(bin => res.status(200).send()).catch(err => console.error(err))
+        db.createBin([name, price]).then(bin => res.status(200).send()).catch(() => res.status(500).send())
     },
     readShelves: (req,res,next) => {
         const db = req.app.get('db');
 
-        
+        db.readShelf().then(bin => res.status(200).send()).catch(() => res.status(500).send())
     },
     readBin: (req,res,next) => {
         const db = req.app.get('db');
