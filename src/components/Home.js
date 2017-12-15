@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
+import logo from '../images/logo.png'
 
 
 class Home extends Component {
@@ -8,8 +9,14 @@ class Home extends Component {
       <div>
           <section className='home-header panel'>
                 <div>
-                    <img src='../images/logo.png'/> 
-                    SHELFIE
+                  <div className='logo-wrapper'>
+                      <div>
+                        <img src={logo}/> 
+                      </div>
+                      <div>
+                        SHELFIE
+                      </div>
+                  </div>
                 </div>
           </section>
           <section className='home-main-content panel'>

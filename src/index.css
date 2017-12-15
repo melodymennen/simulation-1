@@ -8,6 +8,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
 }
 
 /* Simulation-1 22C-2, 23E */
@@ -31,4 +32,14 @@ body {
   background-color: #d34735;
   color: white;
   margin: 10px;
+}
+
+.home-header img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.logo-wrapper {
+  display: flex;
 }
